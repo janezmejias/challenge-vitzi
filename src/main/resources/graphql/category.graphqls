@@ -1,0 +1,24 @@
+type Query {
+    findAll: [Category]
+    filterBy(category: CategoryInput): [Category]
+}
+type Category {
+    id: ID!
+    name: String
+    description: String
+    isEnabled: Boolean
+    createdAt: String
+    updatedAt: String
+}
+
+type Mutation {
+    create(category: CategoryInput): Category
+    update(id: ID!, category: CategoryInput): Category
+    delete(id: ID!): Category
+}
+
+input CategoryInput {
+    name: String
+    description: String
+    isEnabled: Boolean
+}

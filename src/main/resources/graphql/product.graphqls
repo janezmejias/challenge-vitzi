@@ -1,0 +1,9 @@
+type Product {
+    id: ID!
+    name: String
+    description: String
+    price: Float
+    isEnabled: Boolean
+    createdAt: String
+    updatedAt: String
+}
