@@ -10,7 +10,7 @@ Install the dependencies and devDependencies and start the server.
 ### Clone with GitHub CLI
 
 ```sh
-gh repo clone 247softwareorganisation/qrvey-integration
+gh repo clone vitzisoftwareorganisation/vitzi-integration
 ```
 
 ### build docker image - back
@@ -90,8 +90,8 @@ By default, the Docker will expose port 8181, so change this within the Dockerfi
 the Dockerfile to build the image.
 
 ```sh
-docker build -t 247-qrvey-integration:1.0 .
-#docker tag 247-qrvey-integration:1.0 janezmejias09/247-qrvey-integration:1.0
-#docker push janezmejias09/247-qrvey-integration:1.0
-docker run -p 8181:8080 -td --name 247-dp 247-qrvey-integration:1.0
+docker build -t vitzi-integration:1.0 .
+#docker tag vitzi-integration:1.0 janezmejias09/vitzi-integration:1.0
+#docker push janezmejias09/vitzi-integration:1.0
+docker run -p 8181:8080 -td --name vitzi-dp vitzi-integration:1.0
 ```
